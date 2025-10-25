@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>An's Portfolio</title>
+    <title>John's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Navigation Menu -->
+            <ul id="nav-list">
                 <li><a href="#">Works</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
@@ -20,18 +27,23 @@
     <section class="intro">
         <div class="container">
             <div class="intro-text">
-                <h1>Hi, I am An, Creative Technologist</h1>
+                <h1>Hi, I am John, Creative Technologist</h1>
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
                 <a href="#" class="btn">Download Resume</a>
             </div>
             <div class="intro-image">
-                <img src="logo.jpg" alt="An's Image">
+                <img src="your-image-url.jpg" alt="John's Image">
             </div>
         </div>
     </section>
     
     <footer>
-        <p>&copy; 2025 An. All rights reserved.</p>
+        <p>&copy; 2025 John. All rights reserved.</p>
     </footer>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="menu-overlay" class="overlay"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>

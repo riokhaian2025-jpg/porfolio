@@ -18,8 +18,10 @@ header {
     background-color: #fff;
     padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
 }
 
+/* Navigation list */
 header nav ul {
     display: flex;
     justify-content: flex-end;
@@ -35,6 +37,48 @@ header nav ul li a {
     color: #333;
     font-weight: bold;
     padding: 0.5rem;
+}
+
+/* Mobile Hamburger Icon */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #333;
+}
+
+#nav-list {
+    display: flex;
+}
+
+#nav-list li {
+    margin-left: 20px;
+}
+
+#nav-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Mobile Menu Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
 }
 
 /* Main Section */
@@ -110,6 +154,40 @@ footer {
         width: 200px;
         height: 200px;
     }
+
+    /* Show the hamburger icon on mobile */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Hide the menu by default on small screens */
+    #nav-list {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #nav-list li {
+        margin: 10px 0;
+    }
+}
+
+/* Mobile menu active state */
+#nav-list.active {
+    display: flex;
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Animation for sliding menu */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -120,4 +198,22 @@ footer {
     .intro-text p {
         font-size: 0.9rem;
     }
+}
+
+
+/* Hamburger icon transformation */
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
 }
