@@ -88,11 +88,11 @@ body {
 }
 
 .btn {
-    background-color: red;
+    background-color: #ff6464;
     color: #fff;
     text-decoration: none;
     padding: 0.8rem 1.5rem;
-    border-radius: 32px;
+    border-radius: 6px;
     font-weight: 600;
     transition: background 0.3s;
 }
