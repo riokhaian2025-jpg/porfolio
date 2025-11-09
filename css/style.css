@@ -218,52 +218,52 @@ body {
   }
 }
 
-/* ---------- Hobby PAGE ---------- */
-.hobby-section {
+/* ---------- Blog PAGE ---------- */
+.Blog-section {
   max-width: 800px;
   margin: 120px auto 80px;
   padding: 0 20px;
 }
 
-.hobby-section h1 {
+.Blog-section h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-.hobby-item {
+.Blog-item {
   margin-bottom: 40px;
   border-bottom: 1px solid #eee;
   padding-bottom: 30px;
 }
 
-.hobby-item h2 {
+.Blog-item h2 {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.hobby-item .meta {
+.Blog-item .meta {
   color: #888;
   font-size: 0.9rem;
   margin-bottom: 10px;
 }
 
-.hobby-item .meta span {
+.Blog-item .meta span {
   margin: 0 6px;
 }
 
-.hobby-item .tag {
+.Blog-item .tag {
   color: #8695a4;
 }
 
-.hobby-item .desc {
+.Blog-item .desc {
   color: #555;
   line-height: 1.5;
 }
 
 @media (max-width: 768px) {
-  .hobby-section {
+  .Blog-section {
     padding: 0 15px;
   }
 }
