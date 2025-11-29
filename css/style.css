@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #1a1a1a;
   background-color: #fff;
   line-height: 1.6;
@@ -28,23 +28,23 @@ body {
   color: #555;
 }
 
-.nav-links {
+#nav-links {
   display: flex;
   gap: 2rem;
 }
 
-.nav-links a {
+#nav-links a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-.nav-links a:hover {
+#nav-links a:hover {
   color: #007bff;
 }
 
-.nav-links a.active {
+#nav-links a.active {
   color: #097DFF; /* Highlight active link */
   font-weight: 700; /* Make active link bold */
 
@@ -124,7 +124,7 @@ body {
 
 /* --- Responsive (Mobile) --- */
 @media (max-width: 768px) {
-  .nav-links {
+  #nav-links {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -136,7 +136,7 @@ body {
     padding: 1rem 0;
   }
 
-  .nav-links.active {
+  #nav-links.active {
     display: flex;
   }
 
